@@ -1,0 +1,17 @@
+{
+  "name": "eleventy-starter",
+  "version": "1.0.0",
+  "description": "Practice with Eleventy with this base template.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx eleventy",
+    "start": "npx eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rachael Nicoletta <rachael.nicoletta@outlook.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}

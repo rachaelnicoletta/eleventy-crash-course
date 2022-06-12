@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>{{ site.name }}{% if title %} - {{ title }}{% endif %}</title>
+    <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="stylesheet" href="/assets/css/global.css">
+</head>
+<body>
+
+    <header>
+        <h1><a href="/">{{ site.name }}</a></h1>
+    </header>
+
+    <nav>
+        <ul>
+            {% for item in nav.items %}
+            <li><a href="{{ item.url }}"{% if item.url === page.url %} aria-current="page" data-state="active" {% endif %}>{{ item.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    <footer>
+        <p>&copy; {{ year }} Rachael's First Eleventy Template.</p>
+    </footer>
+
+</body>
+</html>
